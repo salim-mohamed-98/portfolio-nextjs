@@ -7,17 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import clsx from "clsx";
-
-const links = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "Projects",
-    href: "/projects",
-  },
-];
+import links from "@/lib/data/nav_links.json";
 
 export default function NavHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

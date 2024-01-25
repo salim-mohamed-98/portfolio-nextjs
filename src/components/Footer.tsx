@@ -1,16 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-
-const links = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "Projects",
-    href: "/projects",
-  },
-];
+import links from "@/lib/data/nav_links.json";
 
 export default function Footer() {
   return (

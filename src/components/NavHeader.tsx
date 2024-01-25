@@ -5,6 +5,7 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import clsx from "clsx";
 
 const links = [
@@ -30,14 +31,16 @@ export default function NavHeader() {
       >
         {/* logo */}
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
+          <Link href="/" className="-m-1.5 p-1.5">
+            <span className="sr-only">Salim logo</span>
+            <Image
               className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
+              src="/images/logo.svg"
+              alt="Logo image"
+              width={0}
+              height={0}
             />
-          </a>
+          </Link>
         </div>
         {/* hidden mobile open button */}
         <div className="flex lg:hidden">
@@ -81,14 +84,14 @@ export default function NavHeader() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           {/* logo  */}
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
+            <Link href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">Salim logo</span>
+              <Image
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+                src="/images/logo.svg"
+                alt="logo image"
               />
-            </a>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"

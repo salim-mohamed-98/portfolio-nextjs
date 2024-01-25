@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const links = [
   {
@@ -16,11 +17,13 @@ export default function Footer() {
     <footer className="bg-slate-100 p-4 md:p-8 lg:p-10 ">
       <div className="mx-auto max-w-screen-xl text-center">
         <Link href="/" className="-m-1.5 p-1.5 mx-auto inline-block">
-          <span className="sr-only">Your Company</span>
-          <img
+          <span className="sr-only">Salim logo</span>
+          <Image
             className="h-8 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            alt=""
+            src="/images/logo.svg"
+            alt="logo image"
+            width={0}
+            height={0}
           />
         </Link>
         <p className="my-6 text-gray-500 ">

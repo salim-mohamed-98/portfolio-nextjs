@@ -113,7 +113,7 @@ export default function Home() {
                 src="/images/scribbles-2.svg"
                 width={200}
                 height={200}
-                alt="scribble iage"
+                alt="scribble image"
               />
               <h3 className="text-2xl font-bold">Problem-solving ability.</h3>
               <p className="text-xl leading-7 text-slate-700">
@@ -129,7 +129,7 @@ export default function Home() {
                 src="/images/scribbles-1.svg"
                 width={200}
                 height={200}
-                alt="scribble iage"
+                alt="scribble image"
               />
               <h3 className="text-2xl font-bold">
                 Adaptability and Flexibility.

@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 const links = [
   {
@@ -18,6 +20,7 @@ const links = [
 
 export default function NavHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="bg-white">
@@ -52,7 +55,9 @@ export default function NavHeader() {
           {links.map((link, index) => (
             <Link
               key={index}
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className={clsx("text-sm font-semibold leading-6 text-gray-900", {
+                "underline font-bold": pathname === link.href,
+              })}
               href={link.href}
             >
               {link.name}
@@ -100,7 +105,13 @@ export default function NavHeader() {
                 {links.map((link, index) => (
                   <Link
                     key={index}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className={clsx(
+                      "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900",
+                      {
+                        "bg-sky-200 ": pathname === link.href,
+                        "hover:bg-gray-50": pathname !== link.href,
+                      }
+                    )}
                     href={link.href}
                   >
                     {link.name}

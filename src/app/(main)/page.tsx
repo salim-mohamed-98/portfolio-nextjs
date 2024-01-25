@@ -192,7 +192,7 @@ export default function Home() {
             </div>
 
             <p>
-              I have used remix.js, headlessui and tailwindcss to demonstrate my
+              I have used nextjs, headlessui and tailwindcss to demonstrate my
               skills in real-world context.
             </p>
 

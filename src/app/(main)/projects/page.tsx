@@ -7,7 +7,7 @@ const projects = [
     description:
       "My portfolio website build by me, with remixjs, headlessui and tailwindcss. A place where i showcase my skills and journey in software engineering.",
     img_src: "mockup_portfolio.png",
-    github_link: "https://github.com/salim-mohamed-98/salim-portfolio",
+    github_link: "https://github.com/salim-mohamed-98/portfolio-nextjs",
     demo_link: "https://salim-portfolio-kappa.vercel.app/",
     completed: true,
   },

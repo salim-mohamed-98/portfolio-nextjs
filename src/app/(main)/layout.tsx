@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import NavHeader from "@/components/NavHeader";
 
-export default function RootLayout({
+export default function MainLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

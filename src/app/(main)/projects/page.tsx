@@ -1,5 +1,11 @@
 import ProjectViewItem from "@/components/ProjectViewItem";
 import projects from "@/lib/data/projects.json";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Salim | Projects",
+  description: "Projects",
+};
 
 export default function Projects() {
   return (

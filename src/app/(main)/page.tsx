@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Salim | Home",
+  description: "Home",
+};
 
 const skills = [
   {

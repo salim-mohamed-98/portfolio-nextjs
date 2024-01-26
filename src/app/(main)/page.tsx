@@ -171,13 +171,12 @@ export default function Home() {
       <section className="px-4 py-10 md:py-16">
         <div className="mx-auto max-w-screen-lg *:w-full md:flex md:gap-6">
           {/* image md:block */}
-          <div className="hidden md:block">
+          <div className="hidden md:block relative">
             <Image
               className="h-full w-auto object-cover object-center"
               src="/images/profile_image.jpg"
               alt="profile image"
-              width={0}
-              height={0}
+              fill={true}
             />
           </div>
 
@@ -193,13 +192,12 @@ export default function Home() {
             </p>
 
             {/* image md:hidden */}
-            <div className="my-4 md:hidden">
+            <div className="my-4 h-80 md:hidden relative">
               <Image
+                className="object-cover object-center"
                 src="/images/profile_image.jpg"
                 alt="profile image"
-                className="w-full h-auto"
-                width={0}
-                height={0}
+                fill={true}
               />
             </div>
 

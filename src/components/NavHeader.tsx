@@ -57,10 +57,13 @@ export default function NavHeader() {
             </Link>
           ))}
         </div>
-        {/* hire me link */}
+        {/* contact me link */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Hire me <span aria-hidden="true">&rarr;</span>
+          <a
+            href="mailto:salim_mohamed98@hotmail.com"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            contact me <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
@@ -80,6 +83,8 @@ export default function NavHeader() {
                 className="h-8 w-auto"
                 src="/images/logo.svg"
                 alt="logo image"
+                width={0}
+                height={0}
               />
             </Link>
             <button
@@ -111,13 +116,13 @@ export default function NavHeader() {
                   </Link>
                 ))}
               </div>
-              {/* hire me link */}
+              {/* contact me link */}
               <div className="py-6">
                 <a
-                  href="#"
+                  href="mailto:salim_mohamed98@hotmail.com"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Hire me <span aria-hidden="true">&rarr;</span>
+                  contact me <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>
             </div>

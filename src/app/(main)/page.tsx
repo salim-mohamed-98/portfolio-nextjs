@@ -58,7 +58,7 @@ export default function Home() {
           </div>
           <div className="mt-6 md:mt-0">
             <p className="max-w-[550px] text-lg text-slate-700 sm:text-2xl md:max-w-full md:p-5 md:leading-9">
-              Hello, I'm Salim – a passionate web developer skilled in both
+              Hello, I&apos;m Salim – a passionate web developer skilled in both
               front-end and back-end technologies . While my 80% of{" "}
               <span className="decoration-3 font-medium underline decoration-sky-500 decoration-wavy">
                 expertise is self-taught
@@ -123,10 +123,10 @@ export default function Home() {
               />
               <h3 className="text-2xl font-bold">Problem-solving ability.</h3>
               <p className="text-xl leading-7 text-slate-700">
-                For me, it's not about the tools or technologies I use, but how
-                I use them to solve problems. My focus is always on finding the
-                right solution for each challenge. I really enjoy the process of
-                tackling and solving tough problems.
+                For me, it&apos;s not about the tools or technologies I use, but
+                how I use them to solve problems. My focus is always on finding
+                the right solution for each challenge. I really enjoy the
+                process of tackling and solving tough problems.
               </p>
             </div>
             <div className="w-full space-y-5 p-4 text-center sm:text-left">
@@ -141,10 +141,10 @@ export default function Home() {
                 Adaptability and Flexibility.
               </h3>
               <p className="text-xl leading-7 text-slate-700">
-                I see change as a chance for growth. Whether it's diving into
-                new technologies or tweaking strategies, I'm all about stepping
-                out of my comfort zone. This approach helps me think creatively
-                and find unique solutions.
+                I see change as a chance for growth. Whether it&apos;s diving
+                into new technologies or tweaking strategies, I&apos;m all about
+                stepping out of my comfort zone. This approach helps me think
+                creatively and find unique solutions.
               </p>
             </div>
             <div className="w-full space-y-5 p-4 text-center sm:text-left">
@@ -158,9 +158,10 @@ export default function Home() {
               <h3 className="text-2xl font-bold">Future learning goals.</h3>
               <p className="text-xl leading-7 text-slate-700">
                 As someone with a business-oriented mindset, my ambition is to
-                develop solutions that benefit millions. Currently, I'm steering
-                my path towards mastering mobile app development and digital
-                marketing tools, aiming to broaden my impact in these fields.
+                develop solutions that benefit millions. Currently, I&apos;m
+                steering my path towards mastering mobile app development and
+                digital marketing tools, aiming to broaden my impact in these
+                fields.
               </p>
             </div>
           </div>
@@ -171,10 +172,12 @@ export default function Home() {
         <div className="mx-auto max-w-screen-lg *:w-full md:flex md:gap-6">
           {/* image md:block */}
           <div className="hidden md:block">
-            <img
+            <Image
               className="h-full w-auto object-cover object-center"
-              src="https://assets.website-files.com/64126a8958e3cf3650b6ad18/641270d055d4753bae06002c_Rectangle%206124-min-p-800.jpg"
-              alt="portfolio showcase project"
+              src="/images/profile_image.jpg"
+              alt="profile image"
+              width={0}
+              height={0}
             />
           </div>
 
@@ -191,9 +194,12 @@ export default function Home() {
 
             {/* image md:hidden */}
             <div className="my-4 md:hidden">
-              <img
-                src="https://assets.website-files.com/64126a8958e3cf3650b6ad18/641270d055d4753bae06002c_Rectangle%206124-min-p-800.jpg"
-                alt="portfolio showcase project"
+              <Image
+                src="/images/profile_image.jpg"
+                alt="profile image"
+                className="w-full h-auto"
+                width={0}
+                height={0}
               />
             </div>
 
